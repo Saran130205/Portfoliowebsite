@@ -8,9 +8,10 @@
 </head>
 <body>
     <div id="header">
+        <!-- <img src="images/image2.png"> -->
         <div class="container">
             <nav>
-                <img src="images/portfolio.png" class="logo">
+                <img src="# " class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -19,7 +20,103 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>Software Developer / AI Enthusiastic</p>
+                <h1>Hi I'm <span>Saran</span><br>from Tamil Nadu</h1>
+            </div>
         </div>
     </div>
+     <!-- ---------------About Me-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image4.png">
+            </div>
+            <div class="about-col-2">
+                <h1> <div class="sub-title">About Me</h1>
+                    <p class="about-text">A passionate software developer with a knack for creating efficient and scalable applications. With a strong foundation in computer science and hands-on experience in various programming languages, I thrive on solving complex problems and delivering high-quality solutions. My goal is to continuously learn and grow in the ever-evolving tech landscape while contributing to impactful projects.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Acheivements')">Acheivements</p>
+                        <p class="tab-links" onclick="opentab('Fellowships')">Fellowships</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python </span><br>Scikit Learn / TensorFlow / OpenCV / NumPy / Pandas / Matplotlib / Seaborn / File & Exceptional handling.</li>
+                            <li><span>Front End Developement</span><br>HTML5 / CSS3 / JavaScript / XML / Figma / Canva</li>
+                            <li><span>Back End</span><br>C / C++ / Python</li>
+                            <li><span>Tools</span><br> Jupyter Notebook / Google Colab / VS Code / Curser AI / QT Creater / Android Studio / Git / Github</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Software Developer Intern</span><br>Aeronautical Developement Establishment-DRDO</li>
+                            <li><span>Front-end Developer Intern</span><br>ELGi Equipments Limited</li>
+                            <li><span>3D Modeling</span><br>PMKVY</li>
+                            <!-- <li><span>AI Developement</span><br>Python Libraries / Python Frameworks</li> -->
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Collage-2022-2026</span><br>Jansons Institute of Technology CGPA:8.33.</li>
+                            <li><span>School-2022</span><br>Venkateswara Vidhayalaya Matric Higher Secondary School HSC+2:81.5.</li>
+                            <!-- <li><span>AI Developement</span><br>Python Libraries / Python Frameworks</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Acheivements">
+                        <ul>
+                            <li><span>NPTEL</span><br> Extended Reality through AR/VR/MR.</li>
+                            <li><span>PMKVY</span><br>Additive Manufacturing and 3D printing.</li>
+                            <li><span>IIC</span><br>Student Innovation Ambassador.</li>
+                            <li><span>Microsoft Skill Fest</span><br>Microsoft AI Skill Fest.</li>
+                            <li><span>Google Arcade</span><br>Google Arcade Cloud Fest 2025.</li>
+                            <!-- <li><span>YuvaYi</span><br>Road Safety vertical Chair Person 2023-2024.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Fellowships">
+                        <ul>
+                            <li><span>NSS</span><br>National Service Scheme volunteer (Co-lead).</li>
+                            <li><span>CSE Club</span><br>Iterators club secretory.</li>
+                            <li><span>IIC</span><br>Institution Innovation Council (Lead).</li>
+                            <li><span>IIC</span><br>Student Innovation Ambassador.</li>
+                            <li><span>YuvaYi</span><br>YuvaYi Vertical Chair Person.</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Hardware Project</span><br>Blind Spot Monitoring and Enhance Vehicle Safety with Advanced Sensor Integration.</li>
+                            <li><span>Software Project</span><br>Hand Gestures Recognition using Python Frameworks.</li>
+                            <li><span>Agri-based Project</span><br>Smart Farming System to repel white grubs using sensors in Agriculture Fields.</li>
+                            <!-- <li><span>IIC</span><br>Student Innovation Ambassador.</li>
+                            <li><span>YuvaYi</span><br>YuvaYi Vertical Chair Person.</li>  -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        
+    </script>
 </body>
 </html>
