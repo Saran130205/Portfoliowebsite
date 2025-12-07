@@ -247,7 +247,7 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     Flex-direction: column-width;
-    padding: 0.o4px
+    padding: 0.o4px;
     text-align: center;
 
 }
