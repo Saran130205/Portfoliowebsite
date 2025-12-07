@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a246e4c6f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -101,6 +102,32 @@
         </div>
         </div>
     </div>
+    <!-----SERVICES----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2><i class="fa-brands fa-firefox-browser"></i>Web Designing</h2>
+                    <p>Involves creating the visual layout and aesthetics of a website, focusing on user experience, graphics, and overall look.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-crop"></i>UI / UX Design</h2>
+                    <p>A UI/UX design portfolio is a collection of projects that showcases a designer's skills, process, and problem-solving abilities to potential clients or employers.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-laptop-code"></i>AI Developer</h2>
+                    <p> Technology enabling machines to mimic human intelligence, learning, problem-solving, and decision-making to perform tasks like understanding language, recognizing patterns, and acting autonomously, powering things from voice assistants to self-driving cars by processing vast data. </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -114,7 +141,7 @@
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
+            document.getElementById(tabname).classList.add("active-tab");
         }
         
     </script>
