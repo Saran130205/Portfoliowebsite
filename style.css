@@ -24,10 +24,6 @@ body{
     padding: 10%;
     margin-top: 80px;
 } 
-/* #header img{
-    width: 100%;
-} */
-
 .container{
     padding: 5px 20px;
 }
@@ -294,10 +290,6 @@ nav ul li a:hover::after{
 /*-------CONTACT-----*/
 .contact-left{
     flex-basis: 35%;
-
-}
-.contact-right{
-    flex-basis: 60%;
 }
 .contact-left p{
     margin-top: 30px;
@@ -317,7 +309,6 @@ nav ul li a:hover::after{
     font-size: 30px;
     display: inline-block;
     transition: transform 0.5s ;
-
 }
 .social-icons a:hover{
     color: #ff004f;
@@ -327,7 +318,55 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #ff004f;
     color: #fff;
-
+    margin-top: 5px;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 70%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 20px;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
 }
 
+/* ------- CSS for small Screen ------- */
 
+@media only screen and (max-width: 600px){
+    #header{
+        /* background-image: url("images/Untitled\ design.jpg"); */
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+
+}
